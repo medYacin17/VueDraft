@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/icon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weaplan</title>
+  <link rel="stylesheet" type="text/css" href="/loader.css" />
+  <script type="module" crossorigin src="/assets/index-5d9aac78.js"></script>
+  <link rel="stylesheet" href="/assets/index-0cb8a874.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="loading-bg">
+      <div class="loading-logo">
+        <!-- SVG Logo -->
+        <svg viewBox="0 400 1000 300" width="86" height="48" xmlns="http://www.w3.org/2000/svg">
+          <path fill="var(--initial-loader-color)"
+            d="M 241.5,242.5 C 243.467,242.261 245.301,242.594 247,243.5C 292.575,356.31 338.408,468.977 384.5,581.5C 406.118,527.486 427.451,473.319 448.5,419C 428.598,369.793 408.598,320.627 388.5,271.5C 445.217,261.353 502.051,251.686 559,242.5C 559.833,242.833 560.667,243.167 561.5,243.5C 600.973,347.254 640.64,450.921 680.5,554.5C 722.353,450.947 764.02,347.28 805.5,243.5C 806.333,243.167 807.167,242.833 808,242.5C 866.864,251.838 925.697,261.338 984.5,271C 911.167,446.667 837.833,622.333 764.5,798C 710.5,798.667 656.5,798.667 602.5,798C 574.366,728.23 546.366,658.396 518.5,588.5C 490.929,658.38 463.263,728.214 435.5,798C 380.501,798.5 325.501,798.667 270.5,798.5C 199.167,622.5 127.833,446.5 56.5,270.5C 118.353,261.522 180.02,252.189 241.5,242.5 Z"
+            transform="matrix(1, 0, 0, 1, -2.842170943040401e-14, 0)" />
+        </svg>
+      </div>
+      <div class=" loading">
+        <div class="effect-1 effects"></div>
+        <div class="effect-2 effects"></div>
+        <div class="effect-3 effects"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const loaderColor = localStorage.getItem('vuexy-initial-loader-bg') || '#FFFFFF'
+    const primaryColor = localStorage.getItem('vuexy-initial-loader-color') || '#1A466E'
+
+    if (loaderColor)
+      document.documentElement.style.setProperty('--initial-loader-bg', loaderColor)
+
+    if (primaryColor)
+      document.documentElement.style.setProperty('--initial-loader-color', primaryColor)
+  </script>
+</body>
+
+</html>
